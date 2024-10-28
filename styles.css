@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://source.unsplash.com/1600x900/?village,landscape');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h4 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: gray;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: violet;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#subscribe-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#subscribe-btn:hover {
+    background-color: #45a049;
+}
+
+/* Pop-up Styling */
+#newsletter-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-width: 400px;
+    width: 100%;
+}
+
+#close-popup {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background-color: #d32f2f;
+}
+
+/* Overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Responsive Design for Tablets and Mobile */
+
+/* For tablets */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 20px;
+    }
+
+    header h4 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    #subscribe-btn {
+        padding: 8px 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #newsletter-popup {
+        max-width: 90%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h4 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    #subscribe-btn {
+        padding: 6px 12px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #newsletter-popup {
+        width: 90%;
+    }
+}
